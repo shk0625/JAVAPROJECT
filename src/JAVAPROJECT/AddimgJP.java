@@ -7,8 +7,6 @@ public class AddimgJP extends JFrame {
     JPanel jp = new JPanel();
     JButton btn = new JButton();
 
-
-
     ImageIcon imagenotboomopeneyes = new ImageIcon("포춘쿠키안터지고눈뜸크기조정 ㅇ.png");
     ImageIcon imagenotboomcloseeyes = new ImageIcon("포춘쿠키 안 터지고 눈감음 조정ㅇ.png");
     ImageIcon imageboomopeneyes = new ImageIcon("포춘쿠키터지고눈뜸크기조정 ㅇ.png");
