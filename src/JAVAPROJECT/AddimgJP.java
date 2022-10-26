@@ -30,7 +30,7 @@ public class AddimgJP extends JFrame {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
          new AddimgJP();
          /*new Image1();*/
     }
