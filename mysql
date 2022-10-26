@@ -1,0 +1,4 @@
+select*from list;
+
+insert into list(day,korwords) values(1,'무엇인가 좋은 결실을 이룰 것 같은 날입니다.');
+insert into list(day,korwords) values(21,'후회없는 하루를 보내보세요');
