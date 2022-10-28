@@ -12,7 +12,7 @@ public class AddimgJP extends JFrame {
     ImageIcon imageboomopeneyes = new ImageIcon("포춘쿠키터지고눈뜸크기조정 ㅇ.png");
 
     public AddimgJP() {
-      setTitle("이미지 넣기");
+      setTitle("포춘쿠키");
       setSize(1000,700);
       Dimension frameSize = getSize();
       Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -26,6 +26,7 @@ public class AddimgJP extends JFrame {
 
       jp.add(btn);
       add(jp);
+      setLocation(400,200);
       setVisible(true);
 
     }
