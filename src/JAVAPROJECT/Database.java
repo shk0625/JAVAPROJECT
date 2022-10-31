@@ -16,6 +16,6 @@ class DBcon{
 
     public void connect(){
         String url ="jdbc:mysql://localhost1521/database?serverTimezone=UTC";
-        connection = DriverManager.getConnection(URL,"user","password");
+        connection = DriverManager.getConnection(url,"user","password");
     }
 }
