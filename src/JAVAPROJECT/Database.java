@@ -14,8 +14,10 @@ public class Database {
 class DBcon{
     Connection connection;
 
+
+
     public void connect(){
-        String url ="jdbc:mysql://localhost1521/database?serverTimezone=UTC";
-        connection = DriverManager.getConnection(url,"user","password");
+        String url="jdbc:mysql://localhost/dev?useSSL=false";
+//        connection = DriverManager.getConnection(url,"user","password");
     }
 }
