@@ -30,7 +30,7 @@ public class MenuBar1 extends JFrame {
 
         mb.add(file); mb.add(show);
 
-        p.setBackground(Color.white);
+        p.setBackground(Color.white); //전체 패널 바탕 색
 
         Button btnboom;
         btnboom=new Button("포춘쿠키 터트리기");
@@ -53,11 +53,25 @@ public class MenuBar1 extends JFrame {
         });
 
         setLocation(400,200);
-        setMenuBar(mb);
-        setSize(1000, 700);
+        setMenuBar(mb); //메뉴바 (파일, 저장) 출력
+        setSize(1000, 700); //창 출력
         setVisible(true);
 
+//첫 번째 화면에 나올 이미지 2개와 포춘공룡 클릭시 나오는 이미지
+        JPanel jp1 = new JPanel(); //터지기 전 눈 뜸
+        JPanel jp2 = new JPanel(); //터지기 전 눈 감음
+
+        JLabel lb1 = new JLabel(); //눈뜸안터짐
+        JLabel lb2 = new JLabel(); //눈감음 안터짐
+
+        ImageIcon img1= new ImageIcon("포춘쿠키안터지고눈뜸크기조정 ㅇ.png"); //jp1
+        ImageIcon img2= new ImageIcon("포춘쿠키 안 터지고 눈감음 조정ㅇ.png"); //jp2
+
+        lb1 = new JLabel("first",img1,SwingConstants.CENTER);
+        lb2 = new JLabel("sec",img2,SwingConstants.CENTER);
+
     }
+
 
     public static void main(String args[]) {
         /*new Image1(); 창이 2개가 뜸 */
