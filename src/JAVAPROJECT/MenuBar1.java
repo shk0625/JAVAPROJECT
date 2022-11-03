@@ -39,6 +39,7 @@ public class MenuBar1 extends JFrame {
         p.setLocation(100,100);
         p.setVisible(true);
         add(p);
+        btnboom.setVisible(true);
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,6 +51,7 @@ public class MenuBar1 extends JFrame {
                 setVisible(false);
             }
         });
+
         setLocation(400,200);
         setMenuBar(mb);
         setSize(1000, 700);
