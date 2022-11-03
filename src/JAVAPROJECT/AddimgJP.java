@@ -23,7 +23,7 @@ public class AddimgJP extends JFrame {
 
 
     public AddimgJP() {
-      setTitle("포춘쿠키");
+      setTitle("포춘쿠키 출력");
       setSize(1000,700);
       Dimension frameSize = getSize();
       Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -34,9 +34,8 @@ public class AddimgJP extends JFrame {
         lb2 = new JLabel("sec",img2,SwingConstants.CENTER);
         lb3 = new JLabel("th",img3,SwingConstants.CENTER);
 
-
         setLocation((windowSize.width-frameSize.width)/2,(windowSize.height-frameSize.height)/2);
-      setVisible(true);
+        setVisible(true);
 
       jpb.setBackground(Color.white);
 
