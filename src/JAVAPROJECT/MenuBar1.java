@@ -70,6 +70,8 @@ public class MenuBar1 extends JFrame {
         lb1 = new JLabel("first",img1,SwingConstants.CENTER);
         lb2 = new JLabel("sec",img2,SwingConstants.CENTER);
 
+        jp1.add(lb1); jp1.add(lb2);
+
     }
 
 
@@ -78,6 +80,7 @@ public class MenuBar1 extends JFrame {
 /*        new MainFrame(); 어차피 이 거 안 갖고 와짐*/
         new MenuBar1("포춘쿠키"); //여기서는 이 화면만 출력됨.
         new Button();
+
         /*new AddimgJP(); 창 2개 뜸*/
     }
 }
