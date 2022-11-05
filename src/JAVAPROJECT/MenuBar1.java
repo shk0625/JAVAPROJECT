@@ -1,15 +1,25 @@
 package JAVAPROJECT;
 
+import JAVAPROJECT.util.ImageUtil;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import static JAVAPROJECT.util.ImagePrint.안터지고눈감음;
+import static JAVAPROJECT.util.ImagePrint.안터지고눈뜸;
 
 public class MenuBar1 extends JFrame {
     public MenuBar1(String str) {
         super(str);
         MenuBar mb = new MenuBar();
         Panel p = new Panel();
+
+        JLabel lb = new JLabel(); //공룡
+
+        ImageIcon img4= new ImageIcon("포춘공룡.png"); //jp
+        lb= new JLabel("공룡",img4,SwingConstants.CENTER);
 
         Dimension frameSize = getSize();
         Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -41,6 +51,7 @@ public class MenuBar1 extends JFrame {
         add(p);
         btnboom.setVisible(true);
 
+
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         btnboom.addActionListener(new ActionListener() {
@@ -64,13 +75,12 @@ public class MenuBar1 extends JFrame {
         JLabel lb1 = new JLabel(); //눈뜸안터짐
         JLabel lb2 = new JLabel(); //눈감음 안터짐
 
-        ImageIcon img1= new ImageIcon("포춘쿠키안터지고눈뜸크기조정 ㅇ.png"); //jp1
-        ImageIcon img2= new ImageIcon("./image1/포춘쿠키_안_터지고_눈감음_조정.png"); //jp2
+        lb1 = new JLabel("fortune", ImageUtil.getImageNumber(안터지고눈감음),SwingConstants.CENTER);
+        lb2 = new JLabel("sec",ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
 
-        lb1 = new JLabel("first",img1,SwingConstants.CENTER);
-        lb2 = new JLabel("sec",img2,SwingConstants.CENTER);
-
-        jp1.add(lb1); jp1.add(lb2);
+        jp2.add(lb1); jp1.add(lb1); //안터지고눈뜸
+        jp1.add(lb2); jp1.add(lb2); //안터지고눈감음
+        add(jp1); add(jp2);
 
     }
 
