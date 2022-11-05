@@ -65,7 +65,7 @@ public class MenuBar1 extends JFrame {
         JLabel lb2 = new JLabel(); //눈감음 안터짐
 
         ImageIcon img1= new ImageIcon("포춘쿠키안터지고눈뜸크기조정 ㅇ.png"); //jp1
-        ImageIcon img2= new ImageIcon("포춘쿠키 안 터지고 눈감음 조정ㅇ.png"); //jp2
+        ImageIcon img2= new ImageIcon("./image1/포춘쿠키_안_터지고_눈감음_조정.png"); //jp2
 
         lb1 = new JLabel("first",img1,SwingConstants.CENTER);
         lb2 = new JLabel("sec",img2,SwingConstants.CENTER);
