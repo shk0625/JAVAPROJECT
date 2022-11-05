@@ -17,7 +17,8 @@ public class Image1 extends JFrame{
     JButton back = new JButton();
 
     public Image1(){
-        setTitle("포춘쿠키");
+
+        setTitle("포춘쿠키image1");
         setSize(1000,700);
         Dimension frameSize = getSize();
         Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -29,6 +30,7 @@ public class Image1 extends JFrame{
         add(jpb);
         setVisible(true);
 
+/*
         ImageIcon img1= new ImageIcon("포춘쿠키안터지고눈뜸크기조정 ㅇ.png"); //jp1
         ImageIcon img2= new ImageIcon("포춘쿠키_안_터지고_눈감음_조정.png"); //jp2
         ImageIcon img3= new ImageIcon("포춘쿠키터지고눈뜸크기조정 ㅇ.png"); //jp3
@@ -38,6 +40,7 @@ public class Image1 extends JFrame{
         lb1 = new JLabel("first",img1,SwingConstants.CENTER);
         lb2 = new JLabel("sec",img2,SwingConstants.CENTER);
         lb3 = new JLabel("th",img3,SwingConstants.CENTER);
+*/
 
         jpb.add(lb);  jp1.add(lb1); jp2.add(jp2); jp3.add(jp3);
        setVisible(true);
