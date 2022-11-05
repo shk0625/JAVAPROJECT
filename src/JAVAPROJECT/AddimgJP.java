@@ -11,6 +11,7 @@ import static JAVAPROJECT.util.ImagePrint.터지고눈뜸;
 
 public class AddimgJP extends JFrame {
     JPanel jpb=new JPanel();
+    JPanel btnp = new JPanel(new BorderLayout());
 
     JPanel jp3= new JPanel(); //터짐
 
@@ -23,7 +24,7 @@ public class AddimgJP extends JFrame {
       Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
 
       jpb.setSize(500,300);
-      jpb.setBackground(Color.BLACK);
+      jpb.setBackground(Color.pink);
 
         lb3 = new JLabel("fortune",ImageUtil.getImageNumber(터지고눈뜸),SwingConstants.CENTER);
 //        lb3.setSize(300,300);
@@ -34,22 +35,21 @@ public class AddimgJP extends JFrame {
         setLocation((windowSize.width-frameSize.width)/2,(windowSize.height-frameSize.height)/2);
         setVisible(true);
 
-      jpb.setBackground(Color.white);
-      jp3.setBackground(Color.green);
+      jpb.setBackground(Color.gray);
+      jp3.setBackground(Color.green); //이게 출력 됨
 
       setLocation(400,200);
       setVisible(true);
 
       //back button
-        Button back;
-        back = new Button("돌아가기");
-        jpb.add(back);
-        jpb.setSize(300,500);
+        JButton back;
+        back = new JButton("돌아가기");
+        btnp.add(back,BorderLayout.SOUTH);
+        btnp.setSize(300,500);
         /*back.setLocation(50,-150);*/
-        jpb.setLocation(500,-350);
-        jpb.setVisible(true);
-
-        add(jpb);
+        /*btnp.setLocation(100,-150);*/
+        btnp.setVisible(true);
+        add(btnp);
 
         back.addActionListener(new ActionListener() {
             @Override
