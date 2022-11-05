@@ -1,26 +1,20 @@
 package JAVAPROJECT;
 
-import JAVAPROJECT.db.DBcon;
+import JAVAPROJECT.util.ImageUtil;
 
 import javax.swing.*;
 import java.awt.*;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import static JAVAPROJECT.util.ImagePrint.터지고눈뜸;
 
 public class AddimgJP extends JFrame {
     JPanel jpb=new JPanel();
+
     JPanel jp3= new JPanel(); //터짐
 
-    JLabel lb = new JLabel(); //공룡
-
     JLabel lb3 = new JLabel(); //터짐
-
-    JButton back = new JButton();
-
-    ImageIcon img3= new ImageIcon("C:\\Users\\USER\\Desktop\\back test 1\\JAVAPROJECT\\src\\JAVAPROJECT\\image1\\포춘쿠키_안_터지고_눈감음_조정.png"); //jp3
-    ImageIcon img4= new ImageIcon("포춘공룡.png"); //jp
-
 
     public AddimgJP() {
       setTitle("포춘쿠키 출력");
@@ -31,38 +25,46 @@ public class AddimgJP extends JFrame {
       jpb.setSize(500,300);
       jpb.setBackground(Color.BLACK);
 
-
-        lb= new JLabel("공룡",img4,SwingConstants.CENTER);
-        lb3 = new JLabel("th",img3,SwingConstants.CENTER);
-
+        lb3 = new JLabel("fortune",ImageUtil.getImageNumber(터지고눈뜸),SwingConstants.CENTER);
+//        lb3.setSize(300,300);
 
         add(lb3); jp3.add(lb3);
+        add(jp3);
 
         setLocation((windowSize.width-frameSize.width)/2,(windowSize.height-frameSize.height)/2);
         setVisible(true);
 
-      jpb.setBackground(Color.blue);
+      jpb.setBackground(Color.white);
+      jp3.setBackground(Color.green);
 
       setLocation(400,200);
       setVisible(true);
 
+      //back button
+        Button back;
+        back = new Button("돌아가기");
+        jpb.add(back);
+        jpb.setSize(300,500);
+        /*back.setLocation(50,-150);*/
+        jpb.setLocation(500,-350);
+        jpb.setVisible(true);
 
-        Connection connection = DBcon.connection();
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from list");
+        add(jpb);
 
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new MenuBar1("포춘쿠키Menubar");
+                setVisible(false);
+            }
+        });
 
-
-
-        }catch (Exception e) {
-
-        }
 
     }
 
     public static void main(String[] args){
          new AddimgJP();
+         new Button();
          /*new Image1();*/
     }
 }
