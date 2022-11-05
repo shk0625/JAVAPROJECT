@@ -30,7 +30,7 @@ public class Image1 extends JFrame{
         setVisible(true);
 
         ImageIcon img1= new ImageIcon("포춘쿠키안터지고눈뜸크기조정 ㅇ.png"); //jp1
-        ImageIcon img2= new ImageIcon("포춘쿠키 안 터지고 눈감음 조정ㅇ.png"); //jp2
+        ImageIcon img2= new ImageIcon("포춘쿠키_안_터지고_눈감음_조정.png"); //jp2
         ImageIcon img3= new ImageIcon("포춘쿠키터지고눈뜸크기조정 ㅇ.png"); //jp3
         ImageIcon img4= new ImageIcon("포춘공룡.png"); //jp
 
