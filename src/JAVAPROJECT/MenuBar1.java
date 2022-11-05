@@ -7,8 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static JAVAPROJECT.util.ImagePrint.안터지고눈감음;
-import static JAVAPROJECT.util.ImagePrint.안터지고눈뜸;
+import static JAVAPROJECT.util.ImagePrint.*;
 
 public class MenuBar1 extends JFrame {
     public MenuBar1(String str) {
@@ -18,8 +17,6 @@ public class MenuBar1 extends JFrame {
 
         JLabel lb = new JLabel(); //공룡
 
-        ImageIcon img4= new ImageIcon("포춘공룡.png"); //jp
-        lb= new JLabel("공룡",img4,SwingConstants.CENTER);
 
         Dimension frameSize = getSize();
         Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -81,6 +78,16 @@ public class MenuBar1 extends JFrame {
         jp2.add(lb1); jp1.add(lb1); //안터지고눈뜸
         jp1.add(lb2); jp1.add(lb2); //안터지고눈감음
         add(jp1); add(jp2);
+
+
+       //초안을 누를시 포춘공룡 이미지가 있는 클래스 이동
+       show_draft.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent e) {
+                new Dinosaur();
+                setVisible(false);
+           }
+       });
 
     }
 
