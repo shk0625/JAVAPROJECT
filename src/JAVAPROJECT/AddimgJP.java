@@ -1,7 +1,12 @@
 package JAVAPROJECT;
 
+import JAVAPROJECT.db.DBcon;
+
 import javax.swing.*;
 import java.awt.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class AddimgJP extends JFrame {
     JPanel jpb=new JPanel();
@@ -40,6 +45,19 @@ public class AddimgJP extends JFrame {
 
       setLocation(400,200);
       setVisible(true);
+
+
+        Connection connection = DBcon.connection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from list");
+
+
+
+
+        }catch (Exception e) {
+
+        }
 
     }
 
