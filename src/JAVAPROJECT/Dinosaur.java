@@ -13,14 +13,16 @@ public class Dinosaur extends JFrame {
     public Dinosaur(){
         JPanel jpimage = new JPanel();
         JPanel jpback=new JPanel();
-        JPanel jptext = new JPanel();
+        JPanel jptext = new JPanel(); //labe 붙일 거 TMI
         JLabel jlimage = new JLabel();
         JLabel jltext = new JLabel();
 
         setTitle("포춘공룡");
-        setSize(1000,700);
+        setSize(1000,700); //window창 크기
+        /*setSize(1000,700);*/
         setLocation(400,200);
-        jpimage.setSize(800,800);
+        jpimage.setSize(800,800); //공룡크기
+        /*jpback.setSize(1000,700);*/
 //        jpimage.setLocation(400,200);
 
         jlimage= new JLabel("포춘공룡", ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
@@ -31,6 +33,7 @@ public class Dinosaur extends JFrame {
         jltext.setText("\n");
         jltext.setText("하지만 공룡 그린 내가 너무 대단해서 넣음");
         jltext.setLocation(200,-150);
+
         add(jltext); jptext.add(jltext);
         add(jptext);
         jlimage.setVisible(true);
