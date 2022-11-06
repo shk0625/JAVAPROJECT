@@ -48,7 +48,6 @@ public class MenuBar1 extends JFrame {
         add(p);
         btnboom.setVisible(true);
 
-
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         btnboom.addActionListener(new ActionListener() {
@@ -59,11 +58,13 @@ public class MenuBar1 extends JFrame {
                 setVisible(false);
             }
         });
-
         setLocation(400,200);
         setMenuBar(mb); //메뉴바 (파일, 저장) 출력
         setSize(1000, 700); //창 출력
         setVisible(true);
+
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
 
 //첫 번째 화면에 나올 이미지 2개와 포춘공룡 클릭시 나오는 이미지
         JPanel jp1 = new JPanel(); //터지기 전 눈 뜸

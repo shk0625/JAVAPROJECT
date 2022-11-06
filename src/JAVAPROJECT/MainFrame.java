@@ -18,6 +18,8 @@ public class MainFrame {
         jf.setLocation(400,200);
         jf.setVisible(false);
 
+        ImageUtil.setImage();
+
         new MenuBar1("fortune");
     }
 }
