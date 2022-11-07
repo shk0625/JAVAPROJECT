@@ -3,15 +3,18 @@ package JAVAPROJECT.db;
 import java.util.Date;
 
 public class Datasave {
-    private String words;
+    private String korwords;
     private int day;
 
+    public Datasave(int day, String korwords) {
+    }
+
     public String getWords() {
-        return words;
+        return korwords;
     }
 
     public void setWords(String words) {
-        this.words = words;
+        this.korwords = words;
     }
 
     public int getDay() {
