@@ -12,32 +12,27 @@ import static JAVAPROJECT.util.ImagePrint.포춘공룡;
 public class Dinosaur extends JFrame {
     public Dinosaur(){
         JPanel jpimage = new JPanel();
-        JPanel jpback=new JPanel();
-        JPanel jptext = new JPanel(); //labe 붙일 거 TMI
+        JPanel jpback=new JPanel(new BorderLayout());
+        JPanel jptext = new JPanel(); //label 붙일 거 TMI
         JLabel jlimage = new JLabel();
         JLabel jltext = new JLabel();
 
         setTitle("포춘공룡");
         setSize(1000,700); //window창 크기
-        /*setSize(1000,700);*/
         setLocation(400,200);
         jpimage.setSize(800,800); //공룡크기
-        /*jpback.setSize(1000,700);*/
-//        jpimage.setLocation(400,200);
 
-        jlimage= new JLabel("포춘공룡", ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
+        jlimage= new JLabel(ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
         add(jlimage); jpimage.add(jlimage); add(jpimage);
-        setVisible(true);
-
-        jltext.setText("원래 공룡 입에서 문구가 나오는 것을 " + "기획했지만~.. 주제와 맞지 않아서 아쉽게 탈락ㅜㅜ");
-        jltext.setText("\n");
-        jltext.setText("하지만 공룡 그린 내가 너무 대단해서 넣음");
-        jltext.setLocation(200,-150);
-
-        add(jltext); jptext.add(jltext);
-        add(jptext);
+        jpimage.setLocation(300,100);
         jlimage.setVisible(true);
 
+        jltext.setText("원래 공룡 입에서 문구가 나오는 것을 " + "기획했지만 주제와 맞지 않아서 그만뒀음ㅜㅜ");
+        add(jltext); jptext.add(jltext); add(jptext);
+        jptext.setLocation(200,-150);
+        jptext.setVisible(true);
+
+        //back button
        JButton back = new JButton("돌아가기");
         jpback.add(back, BorderLayout.SOUTH);
         jpback.setSize(500,500);
