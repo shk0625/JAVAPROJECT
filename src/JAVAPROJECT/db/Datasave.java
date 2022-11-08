@@ -7,6 +7,8 @@ public class Datasave {
     private int day;
 
     public Datasave(int day, String korwords) {
+        this.day = day;
+        this.korwords = korwords;
     }
 
     public String getWords() {
