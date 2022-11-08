@@ -50,11 +50,12 @@ public class AddimgJP extends JFrame {
             System.out.println("e = " + e);
         }
 
+        //데이터베이스 말 출력
         JTextField words = new JTextField(word);
         add(lbwords); jpb.add(words); add(jpb);
         jpb.add(lbwords);
+        jpb.setLocation(235,400); //텍스트 필드 위치 조정되는 코드
         lbwords.setSize(300,300);
-        lbwords.setLocation(150,SwingConstants.BOTTOM);
 
         add(lb3); jp3.add(lb3);
         add(jp3);
