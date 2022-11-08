@@ -24,18 +24,18 @@ public class Dinosaur extends JFrame {
 
         jlimage= new JLabel(ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
         add(jlimage); jpimage.add(jlimage); add(jpimage);
-        jpimage.setLocation(300,100);
+        jpimage.setLocation(450,25); //이미지 위치
         jlimage.setVisible(true);
 
         jltext.setText("원래 공룡 입에서 문구가 나오는 것을 " + "기획했지만 주제와 맞지 않아서 그만뒀음ㅜㅜ");
         add(jltext); jptext.add(jltext); add(jptext);
-        jptext.setLocation(200,-150);
+        jptext.setLocation(200,150);
         jptext.setVisible(true);
 
         //back button
        JButton back = new JButton("돌아가기");
         jpback.add(back, BorderLayout.SOUTH);
-        jpback.setSize(500,500);
+      /*  jpback.setSize(500,500);*/
         jpback.setVisible(true);
         add(jpback);
         //다시 돌아가는 코드 구현
