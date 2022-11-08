@@ -1,6 +1,10 @@
 package JAVAPROJECT.db;
 
+import JAVAPROJECT.MenuBar1;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.ResultSet;
@@ -18,6 +22,22 @@ public class DataContro extends JFrame {
         setSize(1000,700);
         setLocation(400,200);
         setVisible(true);
+
+        back = new JButton("돌아가기");
+        jp.add(back); jp.setSize(300,300);
+        jp.setLocation(300,300);
+        jp.setVisible(true);
+        add(jp);
+        back.setVisible(true);
+
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new MenuBar1("포춘쿠키");
+                setVisible(false);
+            }
+        });
+
     }
     public static void main(String args[]) {
 
