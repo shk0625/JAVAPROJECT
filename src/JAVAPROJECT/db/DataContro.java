@@ -40,28 +40,20 @@ public class DataContro extends JFrame {
 
     }
     public static void main(String args[]) {
-
-
-        Connection conn = DatabaseCon.connection();
+        Connection conn =DatabaseCon.connection();
 
         ArrayList<Datasave> list = new ArrayList<Datasave>();
-        Connection con = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         int index = 1;
 
         try {
-            con=DatabaseCon.connection();
-            StringBuffer sql = new StringBuffer();
-            sql.append("select day,korwords from list");
-            ps=con.prepareStatement(sql.toString());
-            rs=ps.executeQuery();
+            ps = conn.prepareStatement("select day, korwords from list"); //DB가 알아먹을 수 있는 말로 변환
+            rs = ps.executeQuery();
 
             while(rs.next()){
-                index = 1;
-                int day = rs.getInt(index++);
-                String korwords = rs.getString(index++);
-
+                int day = rs.getInt(1);
+                String korwords = rs.getString(2);
                 list.add(new Datasave(day,korwords));
             }
 
@@ -73,14 +65,14 @@ public class DataContro extends JFrame {
                     rs.close();
                 else if(ps!=null)
                     ps.close();
-                else if(con!=null)
-                    con.close();
+                else if(conn!=null)
+                    conn.close();
             }catch (SQLException e2){
                 e2.printStackTrace();
             }
         }
         for(Datasave model:list){
-            System.out.println(model.getDay()+"번째 "+model.getWords());
+            System.out.println(model.getDay()+"번째 문구 : "+model.getWords());
         }
     }
 }
