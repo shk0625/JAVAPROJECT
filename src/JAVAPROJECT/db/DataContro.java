@@ -51,7 +51,7 @@ public class DataContro extends JFrame {
             ps = conn.prepareStatement("select day, korwords from list"); //DB가 알아먹을 수 있는 말로 변환
             rs = ps.executeQuery();
 
-            while(rs.next()){
+            while(rs.next()){ //rs.next()가장 중요한 코드였음...ㅣ하
                 int day = rs.getInt(1);
                 String korwords = rs.getString(2);
                 list.add(new Datasave(day,korwords));
