@@ -1,5 +1,6 @@
 package JAVAPROJECT;
 
+import JAVAPROJECT.db.DataContro;
 import JAVAPROJECT.util.ImageUtil;
 
 import javax.swing.*;
@@ -8,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import static JAVAPROJECT.util.ImagePrint.*;
+import static JAVAPROJECT.util.ImageUtil.img1;
 
 public class MenuBar1 extends JFrame {
     public MenuBar1(String str) {
@@ -26,7 +28,7 @@ public class MenuBar1 extends JFrame {
         setVisible(true);
 
         Menu file = new Menu("파일");
-        MenuItem file_save = new MenuItem("저장");
+        MenuItem file_save = new MenuItem("내용");
         file.add(file_save);
 
         Menu show = new Menu("보기");
@@ -38,6 +40,15 @@ public class MenuBar1 extends JFrame {
         mb.add(file); mb.add(show);
 
         p.setBackground(Color.white); //전체 패널 바탕 색
+
+        //파일 보기 누를 시 31개 문구가 출력됨. (뭐뭐있는지 볼 수 있음)
+        file_save.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new DataContro();
+                setVisible(false);
+            }
+        });
 
         Button btnboom;
         btnboom=new Button("포춘쿠키 터트리기");
@@ -67,6 +78,7 @@ public class MenuBar1 extends JFrame {
 
 
 //첫 번째 화면에 나올 이미지 2개와 포춘공룡 클릭시 나오는 이미지
+
         JPanel jp1 = new JPanel(); //터지기 전 눈 뜸
         JPanel jp2 = new JPanel(); //터지기 전 눈 감음
 
@@ -76,9 +88,17 @@ public class MenuBar1 extends JFrame {
         lb1 = new JLabel("fortune", ImageUtil.getImageNumber(안터지고눈감음),SwingConstants.CENTER);
         lb2 = new JLabel("sec",ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
 
+        setSize(1000,700); //window size
+        jp1.setSize(800,800); //안터지고 눈 뜬 거 크기
+        jp2.setSize(800,800); //안터지고 눈 감은 거 크기
+        setLocation(400,200); //위치
+
+        add(lb1); add(lb2);
         jp2.add(lb1); jp1.add(lb1); //안터지고눈뜸
         jp1.add(lb2); jp1.add(lb2); //안터지고눈감음
         add(jp1); add(jp2);
+        setVisible(true);
+
 
 
        //초안을 누를시 포춘공룡 이미지가 있는 클래스 이동
@@ -89,6 +109,21 @@ public class MenuBar1 extends JFrame {
                 setVisible(false);
            }
        });
+
+
+     /*  class manghameonsackjea extends Thread{
+           @Override
+           public void run() {
+               try {
+                   while (true){
+                       setIconImage(img1);
+                   }
+
+               }catch (Exception e){
+
+               }
+           }
+       }*/
 
     }
 
