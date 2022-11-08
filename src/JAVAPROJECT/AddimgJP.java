@@ -25,11 +25,13 @@ public class AddimgJP extends JFrame {
       setTitle("포춘쿠키 출력");
       setSize(1000,700);
       jpb.setSize(500,300);
-        lb3 = new JLabel("fortune words",ImageUtil.getImageNumber(터지고눈뜸),SwingConstants.CENTER);
-        add(lb3); jp3.add(lb3);
-        add(jp3);
-        setVisible(true);
-      jp3.setBackground(Color.white); //이게 출력 됨
+        lb3 = new JLabel(ImageUtil.getImageNumber(터지고눈뜸),SwingConstants.CENTER);
+        add(lb3); jp3.add(lb3); add(jp3);
+        jp3.setLocation(400,200);
+        lb3.setVisible(true);
+
+
+        jp3.setBackground(Color.white); //이게 출력 됨
 
       setLocation(400,200);
       setVisible(true);
