@@ -1,6 +1,7 @@
 package JAVAPROJECT;
 
 import JAVAPROJECT.db.DataContro;
+import JAVAPROJECT.db.LastWords;
 import JAVAPROJECT.util.ImageUtil;
 
 import javax.swing.*;
@@ -46,6 +47,14 @@ public class MenuBar1 extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new DataContro();
+                setVisible(false);
+            }
+        });
+        //지난 날의 문구들(내가 여태껏 뽑은 것들 출력)
+        show_last.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new LastWords();
                 setVisible(false);
             }
         });
