@@ -25,12 +25,12 @@ public class DataContro extends JFrame {
         setVisible(true);
 
         back = new JButton("돌아가기");
-        jp.add(back, BorderLayout.SOUTH);
+        jp.add(back, BorderLayout.EAST);
         jp.setSize(300, 300);
         jp.setLocation(300, 300);
         jp.setVisible(true);
         add(jp);
-        back.setVisible(false);
+        back.setVisible(true);
 
         back.addActionListener(new ActionListener() {
             @Override
@@ -40,12 +40,19 @@ public class DataContro extends JFrame {
             }
         });
 
-        /*ArrayList<Datasave> list = new ArrayList<Datasave>();*/
-        Choice words = new Choice();
 
-        for (Datasave printt : list) {
+        //31개의 데이터들을 choice에 넣는 거
+        /*ArrayList<Datasave> list = new ArrayList<Datasave>();*/
+        /*for (Datasave printt : list) {
             words.addItem(printt.getDay() + "번째 " + printt.getWords());
-        }
+        }*/
+        Choice words = new Choice();
+        words.addItem("무엇인가 좋은 결실을 이룰 것 같은 날입니다.");
+        words.addItem("모든 일이 생각대로 잘 풀리는 날입니다.");
+        words.addItem("오늘보다 내일을 기약하는 것은 어떨까요?");
+        words.addItem("길게 보는 안목과 혜안이 필요합니다..");
+        words.addItem("오늘 할 일은 오늘 하는 게 어떨까요?");
+
         add(words);
         jp.add(words);
         add(jp);
@@ -88,12 +95,6 @@ public class DataContro extends JFrame {
             for (Datasave model : list) {
                 System.out.println(model.getDay() + "번째 문구 : " + model.getWords());
             }
-
-            //choice 스크롤 형식으로 도출시킬게
-            /*Choice words = new Choice();*/
-      /*  //정말 연동이 안 된다면...
-        words.addItem("무엇인가 좋은 결실을 이룰 것 같은 날입니다.");
-        words.addItem("모든 일이 생각대로 잘 풀리는 날입니다.");*/
 
 
         }
