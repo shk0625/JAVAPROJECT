@@ -56,7 +56,7 @@ public class DataContro extends JFrame {
         words.addItem("모든 사람들로부터 사랑받지 않아도 됩니다.");
         words.addItem("미래를 만드는 건 현재입니다.");
         words.addItem("운명의 별은 마음속에 있습니다.");
-        words.addItem("미래는 예측하는 게 아니라 만들어 가는 겁니다.?");
+        words.addItem("미래는 예측하는 게 아니라 만들어 가는 겁니다.");
         words.addItem("피할 수 없으면 즐기는 게 어떨까요?");
 
         words.addItem("고난의 시기에 동요하지않는 건 어떨까요?");
