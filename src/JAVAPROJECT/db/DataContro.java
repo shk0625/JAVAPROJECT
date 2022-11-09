@@ -3,6 +3,7 @@ package JAVAPROJECT.db;
 import JAVAPROJECT.MenuBar1;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -23,7 +24,7 @@ public class DataContro extends JFrame {
         setLocation(400,200);
         setVisible(true);
 
-        back = new JButton("돌아가기");
+       back = new JButton("돌아가기");
         jp.add(back); jp.setSize(300,300);
         jp.setLocation(300,300);
         jp.setVisible(true);
@@ -45,7 +46,7 @@ public class DataContro extends JFrame {
         ArrayList<Datasave> list = new ArrayList<Datasave>();
         PreparedStatement ps = null;
         ResultSet rs = null;
-        int index = 1;
+
 
         try {
             ps = conn.prepareStatement("select day, korwords from list"); //DB가 알아먹을 수 있는 말로 변환
@@ -74,5 +75,11 @@ public class DataContro extends JFrame {
         for(Datasave model:list){
             System.out.println(model.getDay()+"번째 문구 : "+model.getWords());
         }
+
+        //choice 스크롤 형식으로 도출시킬게
+        Choice words = new Choice();
+
+
+
     }
 }
