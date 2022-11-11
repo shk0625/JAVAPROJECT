@@ -4,6 +4,7 @@ import JAVAPROJECT.db.DataContro;
 import JAVAPROJECT.db.LastWords;
 import JAVAPROJECT.util.ImageUtil;
 
+import javax.sql.DataSource;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -118,22 +119,6 @@ public class MenuBar1 extends JFrame {
                 setVisible(false);
            }
        });
-
-
-     /*  class manghameonsackjea extends Thread{
-           @Override
-           public void run() {
-               try {
-                   while (true){
-                       setIconImage(img1);
-                   }
-
-               }catch (Exception e){
-
-               }
-           }
-       }*/
-
     }
 
 
