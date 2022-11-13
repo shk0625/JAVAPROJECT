@@ -113,7 +113,17 @@ public class WordsShow extends JFrame {
        words30.setFont(new Font("궁서체",Font.BOLD,20));
        words31.setFont(new Font("궁서체",Font.BOLD,20));
 
-       add(words1); add(words2);
+       add(words1); add(words2); add(words3); add(words4); add(words5);
+       add(words6); add(words7); add(words8); add(words9); add(words10);
+
+       add(words11); add(words12); add(words13); add(words14); add(words15);
+       add(words16); add(words17); add(words18); add(words19); add(words20);
+
+       add(words21); add(words22); add(words23); add(words24); add(words25);
+       add(words26); add(words27); add(words28); add(words29); add(words30);
+
+       add(words31);
+       
        jp.add(words1); jp.add(words2);
        add(jp);
        jp.setVisible(true);
