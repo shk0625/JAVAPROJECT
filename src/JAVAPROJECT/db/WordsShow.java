@@ -99,8 +99,19 @@ public class WordsShow extends JFrame {
        words16.setFont(new Font("궁서체",Font.BOLD,20));
        words17.setFont(new Font("궁서체",Font.BOLD,20));
        words18.setFont(new Font("궁서체",Font.BOLD,20));
-       
-
+       words19.setFont(new Font("궁서체",Font.BOLD,20));
+       words20.setFont(new Font("궁서체",Font.BOLD,20));
+       words21.setFont(new Font("궁서체",Font.BOLD,20));
+       words22.setFont(new Font("궁서체",Font.BOLD,20));
+       words23.setFont(new Font("궁서체",Font.BOLD,20));
+       words24.setFont(new Font("궁서체",Font.BOLD,20));
+       words25.setFont(new Font("궁서체",Font.BOLD,20));
+       words26.setFont(new Font("궁서체",Font.BOLD,20));
+       words27.setFont(new Font("궁서체",Font.BOLD,20));
+       words28.setFont(new Font("궁서체",Font.BOLD,20));
+       words29.setFont(new Font("궁서체",Font.BOLD,20));
+       words30.setFont(new Font("궁서체",Font.BOLD,20));
+       words31.setFont(new Font("궁서체",Font.BOLD,20));
 
        add(words1); add(words2);
        jp.add(words1); jp.add(words2);
