@@ -123,13 +123,24 @@ public class WordsShow extends JFrame {
        add(words26); add(words27); add(words28); add(words29); add(words30);
 
        add(words31);
-       
-       jp.add(words1); jp.add(words2);
+
+       jp.add(words1); jp.add(words2); jp.add(words3); jp.add(words4); jp.add(words5);
+       jp.add(words6); jp.add(words7); jp.add(words8); jp.add(words9); jp.add(words10);
+
+       jp.add(words11); jp.add(words12); jp.add(words13); jp.add(words14); jp.add(words15);
+       jp.add(words16); jp.add(words17); jp.add(words18); jp.add(words19); jp.add(words20);
+
+       jp.add(words21); jp.add(words22); jp.add(words23); jp.add(words24); jp.add(words25);
+       jp.add(words26); jp.add(words27); jp.add(words28); jp.add(words29); jp.add(words30);
+
+       jp.add(words31);
+
        add(jp);
        jp.setVisible(true);
        words1.setLocation(00,100); words2.setLocation(400,200);
        /*jp.setLocation(400, 200);*/
        setVisible(true);
+       setTitle("보기");
        setLocation(350,200);
        setSize(1400, 1000);
     }
