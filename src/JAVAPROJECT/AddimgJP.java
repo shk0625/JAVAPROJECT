@@ -51,11 +51,13 @@ public class AddimgJP extends JFrame {
         }
 
         //txt파일을 바탕화면에 저장
-        File file = new File("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA"); //LastWords로 된 파일 있음
+        /*File file = new File("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA"); //LastWords로 된 파일 있음*/
         String getword = FindList.get();
 
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(file, true);
+            BufferedWriter out = new BufferedWriter(
+                    (    new FileOutputStream("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA", true)));
+
 
         }catch (FileNotFoundException e){
             e.printStackTrace();
