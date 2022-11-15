@@ -1,13 +1,22 @@
 package JAVAPROJECT.db;
 
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicArrowButton;
+import java.awt.*;
 import java.io.*;
-//내가 뽑았떤 문구들
+//내가 뽑았던 문구들
 public class LastWords extends JFrame {
-    JPanel jp = new JPanel();
+
+    public LastWords() {
+        JPanel jp = new JPanel();
+        JButton back = new JButton();
+        TextArea lastwords = new TextArea();
+
+        back.add(back,BorderLayout.SOUTH);
+        jp.add(back);
 
 
-
+    }
     public static void main(String args[]){
 
 
