@@ -142,6 +142,6 @@ public class WordsShow extends JFrame {
        setVisible(true);
        setTitle("보기");
        setLocation(350,200);
-       setSize(1400, 1000);
+       setSize(1400, 870);
     }
 }
