@@ -63,7 +63,7 @@ public class MenuBar1 extends JFrame {
         Button btnboom;
         btnboom=new Button("포춘쿠키 터트리기");
         p.add(btnboom);
-        p.setSize(300,300);
+        p.setSize(500,500);
         p.setLocation(100,100);
         p.setVisible(true);
         add(p);
