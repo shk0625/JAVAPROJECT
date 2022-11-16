@@ -50,7 +50,6 @@ public class AddimgJP extends JFrame {
             System.out.println("e = " + e);
         }
 
-
         //데이터베이스 말 출력
         JTextField words = new JTextField(word);
         add(lbwords); jpb.add(words); add(jpb);
