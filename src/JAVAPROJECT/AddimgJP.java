@@ -50,22 +50,6 @@ public class AddimgJP extends JFrame {
             System.out.println("e = " + e);
         }
 
-        //txt파일을 바탕화면에 저장
-        File file = new File("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA"); //LastWords로 된 파일 있음
-        String getword = FindList.get();
-
-        try {
-            FileOutputStream fileOutputStream = new FileOutputStream(file, true);
-
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
-        }
-
-
-
-
-
-
 
         //데이터베이스 말 출력
         JTextField words = new JTextField(word);
