@@ -36,10 +36,6 @@ public class LastWords extends JFrame {
             e.printStackTrace();
         }
 
-     /*   ArrayList<LastWords>
-        for(int...getword){
-
-        }*/
 
     }
     public static void main(String args[]){
