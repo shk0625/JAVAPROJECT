@@ -122,35 +122,6 @@ public class MenuBar1 extends JFrame {
        });
     }
 
-    //file 입출력
-    /*
-     * @param strFilePath : 파일경로
-	 * @param strFileName : 파일명
-	 * @param strContents : 내용
-	 * @param isAppand    : 같은 파일명일 경우, 추가로 작성할지 여부
-	 * @param encoding    : encoding명
-	 * */
-
-    public static void FileCharSet(String strFilePath, String strFileName, String strContents, boolean isAppand,String encoding){
-        BufferedWriter output = null;
-        File f = new File(strFilePath); //파일 경로
-
-        if(false==f.exists()){
-            f.mkdirs();
-        }
-        try{
-            output  = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(strFilePath + strFileName),encoding));
-            output.write(strContents);
-            output.close();
-
-        }catch (UnsupportedEncodingException e){
-
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-    }
 
 
     public static void main(String args[]) {
