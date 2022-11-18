@@ -25,14 +25,18 @@ public class LastWords extends JFrame {
         setLocation(400,200);
         setVisible(true);
 
-        //txt파일을 바탕화면에 저장
-        File file = new File("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA"); //LastWords로 된 파일 있음
-        String getword = FindList.get();
+        //txt파일로 내가 뽑은 문구들 저장
+        String text = lastwords.txt;
+        String fileNm="C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA_testfile.txt";
+        try{
+            File lastword = new File(fileNm);
+            FileWriter fileWriter = new FileWriter(file, true);
 
-        try {
-            FileOutputStream fileOutputStream = new FileOutputStream(file, true);
+            fileWriter.write(text);
+            fileWriter.flush();
+            fileWriter.close();
 
-        }catch (FileNotFoundException e){
+        }catch (Exception e){
             e.printStackTrace();
         }
 
