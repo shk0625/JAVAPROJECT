@@ -25,12 +25,11 @@ public class LastWords extends JFrame {
         setLocation(400,200);
         setVisible(true);
 
-
     }
     public static void main(String args[]){
         //txt파일로 내가 뽑은 문구들 저장
         String text = "여기에 데이터베이스 연동하면 됨 파ㅣ팅";
-        String fileNm="C:\\\\Users\\\\USER\\\\Desktop\\\\myself\\\\1-3\\\\수행평가\\\\JAVA_Lastwords.txt";
+        String fileNm="C:\\\\Users\\\\USER\\\\Desktop.\\\\myself\\\\1-3\\\\수행평가\\\\JAVA_Lastwords.txt";
         try{
             File file = new File(fileNm);
             FileWriter fileWriter = new FileWriter(file, true);
