@@ -41,6 +41,9 @@ public class DataContro extends JFrame {
             }
         });
 
+        //눈 감고 안터진 포춘쿠키 이미지 출력
+
+
     }
         public static void main (String args[] ){
             Connection conn = DatabaseCon.connection();
