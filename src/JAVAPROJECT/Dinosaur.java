@@ -26,7 +26,7 @@ public class Dinosaur extends JFrame {
         add(jlimage); jpimage.add(jlimage); add(jpimage);
         jpimage.setLocation(450,25); //이미지 위치
         jlimage.setVisible(true);
-        
+
         jltext.setText("원래 공룡 입에서 문구가 나오는 것을 " + "기획했지만 주제와 맞지 않아서 그만뒀음ㅜㅜ");
         add(jltext); jptext.add(jltext); add(jptext);
         jptext.setLocation(200,150);
