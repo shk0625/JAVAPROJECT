@@ -34,7 +34,7 @@ public class ImageUtil {
 
     public static ImageIcon changeImage(ImageIcon imageIcon) {
         Image image = imageIcon.getImage();
-        Image changeImage = image.getScaledInstance(300, 300, SCALE_SMOOTH);
+        Image changeImage = image.getScaledInstance(500, 400, SCALE_SMOOTH);
         return new ImageIcon(changeImage);
     }
 
