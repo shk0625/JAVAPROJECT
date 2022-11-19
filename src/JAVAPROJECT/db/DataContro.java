@@ -1,6 +1,7 @@
 package JAVAPROJECT.db;
 
 import JAVAPROJECT.MenuBar1;
+import JAVAPROJECT.util.ImageUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,11 +14,14 @@ import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.Date;
 
+import static JAVAPROJECT.util.ImagePrint.안터지고눈감음;
+
 //31개의 데이터베이스 단어들을 모두 출력할거임.
 public class DataContro extends JFrame {
     public DataContro() {
         new WordsShow();
         JPanel jp = new JPanel();
+        JLabel jl = new JLabel();
         JButton back = new JButton();
 
         setTitle("보기");
@@ -26,9 +30,9 @@ public class DataContro extends JFrame {
         setVisible(true);
 
         back = new JButton("돌아가기");
-        jp.add(back, BorderLayout.EAST);
-        jp.setSize(300, 300);
-        jp.setLocation(300, 300);
+        jp.add(back, BorderLayout.SOUTH);
+        /*jp.setSize(300, 300);*/
+        /*jp.setLocation(300, 300);*/
         jp.setVisible(true);
         add(jp);
         back.setVisible(true);
@@ -42,17 +46,18 @@ public class DataContro extends JFrame {
         });
 
         //눈 감고 안터진 포춘쿠키 이미지 출력
-
-
+        jl = new JLabel( ImageUtil.getImageNumber(안터지고눈감음),SwingConstants.CENTER);
+        jl.setLocation(400,200); //상관이 없는듯함
+        add(jl); jp.add(jl); add(jp);
+        jp.setVisible(true);
     }
+
+
         public static void main (String args[] ){
             Connection conn = DatabaseCon.connection();
             ArrayList<Datasave> list = new ArrayList<Datasave>();
             PreparedStatement ps = null;
             ResultSet rs = null;
-
-
-
 
             try {
                 ps = conn.prepareStatement("select day, korwords from list"); //DB가 알아먹을 수 있는 말로 변환
