@@ -4,15 +4,12 @@ import JAVAPROJECT.db.DataContro;
 import JAVAPROJECT.db.LastWords;
 import JAVAPROJECT.util.ImageUtil;
 
-import javax.sql.DataSource;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
 
 import static JAVAPROJECT.util.ImagePrint.*;
-import static JAVAPROJECT.util.ImageUtil.img1;
 
 public class MenuBar1 extends JFrame {
     public MenuBar1(String str) {
@@ -36,9 +33,9 @@ public class MenuBar1 extends JFrame {
 
         Menu show = new Menu("보기");
         MenuItem show_last = new MenuItem("지난 날의 문구들...");
-        MenuItem show_draft = new MenuItem("초안");
+        /*MenuItem show_draft = new MenuItem("초안");*/
         show.add(show_last);
-        show.add(show_draft);
+        /*show.add(show_draft);*/
 
         mb.add(file); mb.add(show);
 
@@ -75,7 +72,7 @@ public class MenuBar1 extends JFrame {
         btnboom.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new AddimgJP();
+                new FortuneBoom();
                 //new Image1();
                 setVisible(false);
             }
@@ -112,14 +109,14 @@ public class MenuBar1 extends JFrame {
 
 
 
-       //초안을 누를시 포춘공룡 이미지가 있는 클래스 이동
+   /*    //초안을 누를시 포춘공룡 이미지가 있는 클래스 이동
        show_draft.addActionListener(new ActionListener() {
            @Override
            public void actionPerformed(ActionEvent e) {
                 new Dinosaur();
                 setVisible(false);
            }
-       });
+       });*/
     }
 
 
@@ -129,6 +126,6 @@ public class MenuBar1 extends JFrame {
 /*        new MainFrame(); 어차피 이 거 안 갖고 와짐*/
         new MenuBar1("포춘쿠키"); //여기서는 이 화면만 출력됨.
         new Button();
-        
+
     }
 }
