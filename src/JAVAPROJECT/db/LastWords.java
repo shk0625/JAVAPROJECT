@@ -1,10 +1,14 @@
 package JAVAPROJECT.db;
 
+import JAVAPROJECT.util.ImageUtil;
+
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicArrowButton;
 import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
+
+import static JAVAPROJECT.util.ImagePrint.포춘공룡;
 
 //내가 뽑았던 문구들
 public class LastWords extends JFrame {
@@ -13,6 +17,8 @@ public class LastWords extends JFrame {
         JPanel jp = new JPanel();
         JButton back = new JButton();
         TextArea lastwords = new TextArea();
+
+        JLabel jlimage = new JLabel();
 
         back.add(back,BorderLayout.SOUTH);
         jp.add(back);
@@ -24,6 +30,14 @@ public class LastWords extends JFrame {
         setSize(1000,700);
         setLocation(400,200);
         setVisible(true);
+
+        //포춘공룡 이미지 추가
+        jlimage= new JLabel(ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
+        add(jlimage); jp.add(jlimage); add(jp);
+        jp.setLocation(450,25); //이미지 위치
+        jp.setSize(800,800); //공룡크기
+        jlimage.setVisible(true);
+
 
     }
     public static void main(String args[]){
