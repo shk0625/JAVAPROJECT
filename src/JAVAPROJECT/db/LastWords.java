@@ -15,14 +15,19 @@ public class LastWords extends JFrame {
 
     public LastWords() {
         JPanel jp = new JPanel();
+        JPanel imagejp = new JPanel();
+        JPanel btnp = new JPanel(new BorderLayout());
         JButton back = new JButton();
         TextArea lastwords = new TextArea();
 
         JLabel jlimage = new JLabel();
 
-        back.add(back,BorderLayout.SOUTH);
-        jp.add(back);
+    /*    back.add(back,BorderLayout.SOUTH);*/
+        add(btnp);
+        btnp.add(back);
+        back.setSize(400,400);
         back.setLocation(300,100);
+        back.setVisible(true);
 
    /*     lastwords.setBackground(Color.WHITE);
         jp.setBackground(Color.white); 왜 이 3개 다 안 됨?
@@ -33,9 +38,10 @@ public class LastWords extends JFrame {
 
         //포춘공룡 이미지 추가
         jlimage= new JLabel(ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
-        add(jlimage); jp.add(jlimage); add(jp);
-        jp.setLocation(450,25); //이미지 위치
-        jp.setSize(800,800); //공룡크기
+        add(jlimage); imagejp.add(jlimage); add(imagejp);
+        /*imagejp.setLocation(450,25); //이미지 위치*/
+        imagejp.setSize(800,800); //공룡크기
+        imagejp.setVisible(true);
         jlimage.setVisible(true);
 
 
