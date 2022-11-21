@@ -17,15 +17,18 @@ public class LastWords extends JFrame {
     public LastWords() {
         JPanel jp = new JPanel();
         JPanel imagejp = new JPanel();
-        JPanel btnp = new JPanel(new BorderLayout());
+        JPanel btnp = new JPanel();
         JButton back = new JButton(BorderLayout.SOUTH);
         TextArea lastwords = new TextArea();
 
         setLayout(new BorderLayout());
         JLabel jlimage = new JLabel();
 
-        add(btnp);
-        btnp.add(back);
+        back.setText("back");
+        add(btnp); //기능 ㅇㅋ
+        btnp.add(back,BorderLayout.SOUTH);
+        btnp.setLocation(400,200);
+        btnp.setSize(600,600);
         back.setVisible(true);
 
         back.addActionListener(new ActionListener() {
@@ -36,9 +39,6 @@ public class LastWords extends JFrame {
             }
         });
 
-   /*     lastwords.setBackground(Color.WHITE);
-        jp.setBackground(Color.white); 왜 이 3개 다 안 됨?
-        setBackground(Color.white);*/
         setSize(1000,700);
         setLocation(400,200);
         setVisible(true);
