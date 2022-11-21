@@ -1,7 +1,6 @@
 package JAVAPROJECT;
 
 import JAVAPROJECT.db.FindList;
-import JAVAPROJECT.db.LastWords;
 import JAVAPROJECT.util.ImageUtil;
 
 import javax.swing.*;
