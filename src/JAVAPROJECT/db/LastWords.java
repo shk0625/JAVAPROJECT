@@ -51,8 +51,8 @@ public class LastWords extends JFrame {
 
     public static void main(String args[]){
         //txt파일로 내가 뽑은 문구들 저장
-        String text = "nothing" ;
-        String fileNm="C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA_Lastwords.txt";
+        String text = "insert words";
+        String fileNm="C:\\Users\\USER\\Desktop_Lastwords.txt"; //바탕화면에 저장되는 경로
 
         try{
             File file = new File(fileNm);
