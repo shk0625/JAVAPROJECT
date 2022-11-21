@@ -25,9 +25,10 @@ public class LastWords extends JFrame {
     /*    back.add(back,BorderLayout.SOUTH);*/
         add(btnp);
         btnp.add(back);
-        back.setSize(400,400);
-        back.setLocation(300,100);
-        back.setVisible(true);
+        btnp.setSize(400,400);
+        /*back.setSize(400,400);*/
+        btnp.setLocation(300,100);
+        btnp.setVisible(true);
 
    /*     lastwords.setBackground(Color.WHITE);
         jp.setBackground(Color.white); 왜 이 3개 다 안 됨?
@@ -46,10 +47,12 @@ public class LastWords extends JFrame {
 
 
     }
+
     public static void main(String args[]){
         //txt파일로 내가 뽑은 문구들 저장
-        String text = "여기에 데이터베이스 연동하면 됨 파ㅣ팅";
+        String text = ;
         String fileNm="C:\\\\Users\\\\USER\\\\Desktop.\\\\myself\\\\1-3\\\\수행평가\\\\JAVA_Lastwords.txt";
+
         try{
             File file = new File(fileNm);
             FileWriter fileWriter = new FileWriter(file, true);
