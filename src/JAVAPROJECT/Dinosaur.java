@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 
 import static JAVAPROJECT.util.ImagePrint.포춘공룡;
 
-public class Dinosaur extends JFrame {
-    public Dinosaur(){
-        JPanel jpimage = new JPanel();
+/*public class Dinosaur extends JFrame {
+    public Dinosaur(){*/
+    /*    JPanel jpimage = new JPanel();
         JPanel jpback=new JPanel(new BorderLayout());
         JPanel jptext = new JPanel(); //label 붙일 거 TMI
         JLabel jlimage = new JLabel();
@@ -35,7 +35,7 @@ public class Dinosaur extends JFrame {
         //back button
        JButton back = new JButton("돌아가기");
         jpback.add(back, BorderLayout.SOUTH);
-      /*  jpback.setSize(500,500);*/
+      *//*  jpback.setSize(500,500);*//*
         jpback.setVisible(true);
         add(jpback);
         //다시 돌아가는 코드 구현
@@ -50,3 +50,4 @@ public class Dinosaur extends JFrame {
 
     }
 }
+*/
