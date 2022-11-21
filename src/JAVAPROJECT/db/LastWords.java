@@ -20,13 +20,12 @@ public class LastWords extends JFrame {
         JPanel jp = new JPanel();
         JPanel imagejp = new JPanel();
         JPanel btnp = new JPanel(new BorderLayout());
-        JButton back = new JButton();
+        JButton back = new JButton(BorderLayout.SOUTH);
         TextArea lastwords = new TextArea();
 
         setLayout(new BorderLayout());
         JLabel jlimage = new JLabel();
 
-        add(new Button("back"),BorderLayout.SOUTH);
         add(btnp);
         btnp.add(back);
         back.setVisible(true);
@@ -59,20 +58,20 @@ public class LastWords extends JFrame {
 
     public static void main(String args[]){
         //txt파일로 내가 뽑은 문구들 저장
-        String text = "insert words";
+        String text = FindList.get();
         String fileNm="C:\\Users\\USER\\Desktop_Lastwords.txt"; //바탕화면에 저장되는 경로
 
-        try{
-            File file = new File(fileNm);
-            if(file.exists()){
-                System.out.println("file exists");
-            }
-            else {
-               System.out.println("file not exists");
-                file.createNewFile();
-            }
+        File file = new File(fileNm);
+        if(file.exists()){
+            System.out.println("file exists"); //어디 경로인데어디어디어ㅣ???? 바탕화면에 안 보이는디..
+        }
+        else {
+            System.out.println("file not exists");
 
-            FileWriter fileWriter = new FileWriter(file, true);
+        }
+        try{
+            file.createNewFile();
+            FileWriter fileWriter = new FileWriter(file, true); //뽑아진 것들 이어서 작성하는 용도
 
             fileWriter.write(text);
             fileWriter.flush();
