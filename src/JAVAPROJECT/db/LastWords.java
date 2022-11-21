@@ -1,10 +1,13 @@
 package JAVAPROJECT.db;
 
+import JAVAPROJECT.MenuBar1;
 import JAVAPROJECT.util.ImageUtil;
 
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicArrowButton;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -26,10 +29,15 @@ public class LastWords extends JFrame {
         add(new Button("back"),BorderLayout.SOUTH);
         add(btnp);
         btnp.add(back);
-        btnp.setSize(400,400);
-        /*back.setSize(400,400);*/
-        btnp.setLocation(300,100);
-        btnp.setVisible(true);
+        back.setVisible(true);
+
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                    new MenuBar1("fortune");
+                    setVisible(false);
+            }
+        });
 
    /*     lastwords.setBackground(Color.WHITE);
         jp.setBackground(Color.white); 왜 이 3개 다 안 됨?
@@ -56,6 +64,14 @@ public class LastWords extends JFrame {
 
         try{
             File file = new File(fileNm);
+            if(file.exists()){
+                System.out.println("file exists");
+            }
+            else {
+               System.out.println("file not exists");
+                file.createNewFile();
+            }
+
             FileWriter fileWriter = new FileWriter(file, true);
 
             fileWriter.write(text);
