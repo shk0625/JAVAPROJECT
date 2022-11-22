@@ -73,7 +73,6 @@ public class MenuBar1 extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new FortuneBoom();
-                //new Image1();
                 setVisible(false);
             }
         });
