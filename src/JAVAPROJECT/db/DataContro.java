@@ -24,7 +24,7 @@ public class DataContro extends JFrame {
         JLabel jl = new JLabel();
         JButton back = new JButton();
 
-        setTitle("보기");
+        setTitle("내용");
         setSize(1000, 700);
         setLocation(400, 200);
         setVisible(true);
