@@ -60,6 +60,9 @@ public class LastWords extends JFrame {
         jlimage.setVisible(true);
 
 
+        //창
+        setTitle("지난 날의 문구들...");
+
     }
 
     public static void main(String args[]){
