@@ -83,6 +83,5 @@ public class FortuneBoom extends JFrame {
     public static void main(String[] args){
          new FortuneBoom();
          new Button();
-         /*new Image1();*/
     }
 }
