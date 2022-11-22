@@ -29,6 +29,7 @@ public class LastWords extends JFrame {
         talklb.setSize(400,400);
         talklb.setLocation(300,300);
         jp.add(talklb);
+        jp.setVisible(true);
 
 
         back.setText("back");
