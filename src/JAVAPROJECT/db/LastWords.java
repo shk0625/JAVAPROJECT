@@ -54,7 +54,6 @@ public class LastWords extends JFrame {
         //포춘공룡 이미지 추가
         jlimage= new JLabel(ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
         add(jlimage); imagejp.add(jlimage); add(imagejp);
-        /*imagejp.setLocation(450,25); //이미지 위치*/
         imagejp.setSize(800,800); //공룡크기
         imagejp.setVisible(true);
         jlimage.setVisible(true);
