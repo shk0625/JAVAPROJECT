@@ -18,11 +18,18 @@ public class LastWords extends JFrame {
         JPanel jp = new JPanel();
         JPanel imagejp = new JPanel();
         JPanel btnp = new JPanel();
+        JLabel talklb= new JLabel();
         JButton back = new JButton(BorderLayout.SOUTH);
         TextArea lastwords = new TextArea();
 
         setLayout(new BorderLayout());
         JLabel jlimage = new JLabel();
+
+        talklb.setText("바탕화면 봐볼래?");
+        talklb.setSize(400,400);
+        talklb.setLocation(300,300);
+        jp.add(talklb);
+
 
         back.setText("back");
         add(btnp); //기능 ㅇㅋ
