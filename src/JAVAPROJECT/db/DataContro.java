@@ -45,11 +45,19 @@ public class DataContro extends JFrame {
             }
         });
 
+        back.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
         //눈 감고 안터진 포춘쿠키 이미지 출력
         jl = new JLabel( ImageUtil.getImageNumber(안터지고눈감음),SwingConstants.CENTER);
         jl.setLocation(400,200); //상관이 없는듯함
         add(jl); jp.add(jl); add(jp);
         jp.setVisible(true);
+
     }
 
 
