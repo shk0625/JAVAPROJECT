@@ -15,7 +15,8 @@ public class MenuBar1 extends JFrame {
     public MenuBar1(String str) {
         super(str);
         MenuBar mb = new MenuBar();
-        Panel p = new Panel();
+        Panel btnp = new Panel();
+        Panel backgroundp = new Panel();
 
         JLabel lb = new JLabel(); //공룡
 
@@ -37,7 +38,7 @@ public class MenuBar1 extends JFrame {
 
         mb.add(file); mb.add(show);
 
-        p.setBackground(Color.white); //전체 패널 바탕 색
+        btnp.setBackground(Color.white); //전체 패널 바탕 색
 
         //파일 보기 누를 시 31개 문구가 출력됨. (뭐뭐있는지 볼 수 있음)
         file_save.addActionListener(new ActionListener() {
@@ -58,11 +59,11 @@ public class MenuBar1 extends JFrame {
 
         Button btnboom;
         btnboom=new Button("포춘쿠키 터트리기");
-        p.add(btnboom);
-        p.setSize(500,500);
-        p.setLocation(100,100);
-        p.setVisible(true);
-        add(p);
+        btnp.add(btnboom);
+        btnp.setSize(500,500);
+        btnp.setLocation(100,100);
+        btnp.setVisible(true);
+        add(btnp);
         btnboom.setVisible(true);
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -90,8 +91,10 @@ public class MenuBar1 extends JFrame {
         lb1 = new JLabel(ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
         lb1.setLocation(400,200); //위치
 
-        add(lb1); jp1.add(lb1); //안터지고눈뜸
-        add(jp1);
+        
+
+       /* add(lb1); jp1.add(lb1); //안터지고눈뜸
+        add(jp1);*/
 
         jp1.setSize(800,800); //안터지고 눈 뜬 거 크기
         jp1.setVisible(true);
