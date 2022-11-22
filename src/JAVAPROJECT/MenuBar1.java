@@ -104,16 +104,7 @@ public class MenuBar1 extends JFrame {
         add(jp1); add(jp2);
         setVisible(true);
 
-
-
-   /*    //초안을 누를시 포춘공룡 이미지가 있는 클래스 이동
-       show_draft.addActionListener(new ActionListener() {
-           @Override
-           public void actionPerformed(ActionEvent e) {
-                new Dinosaur();
-                setVisible(false);
-           }
-       });*/
+        
     }
 
 
