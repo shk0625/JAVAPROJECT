@@ -17,8 +17,7 @@ public class MenuBar1 extends JFrame {
         MenuBar mb = new MenuBar();
         Panel btnp = new Panel();
         Panel backgroundp = new Panel();
-
-        JLabel lb = new JLabel(); //공룡
+        JLabel imagelb = new JLabel(); //눈뜸안터짐
 
 
         Dimension frameSize = getSize();
@@ -85,19 +84,14 @@ public class MenuBar1 extends JFrame {
 
 //첫 번째 화면에 나올 이미지 2개와 포춘공룡 클릭시 나오는 이미지
 
-        JPanel jp1 = new JPanel(); //터지기 전 눈 뜸
-        JLabel lb1 = new JLabel(); //눈뜸안터짐
+        imagelb = new JLabel(ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
+        imagelb.setLocation(400,200); //위치
 
-        lb1 = new JLabel(ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
-        lb1.setLocation(400,200); //위치
 
-        
 
-       /* add(lb1); jp1.add(lb1); //안터지고눈뜸
-        add(jp1);*/
-
-        jp1.setSize(800,800); //안터지고 눈 뜬 거 크기
-        jp1.setVisible(true);
+        backgroundp.setSize(800,800); //안터지고 눈 뜬 거 크기
+        backgroundp.setVisible(true);
+        backgroundp.setLocation(200,300);
 
         setSize(1000,700); //window size
     }
