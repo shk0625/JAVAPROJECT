@@ -85,26 +85,18 @@ public class MenuBar1 extends JFrame {
 //첫 번째 화면에 나올 이미지 2개와 포춘공룡 클릭시 나오는 이미지
 
         JPanel jp1 = new JPanel(); //터지기 전 눈 뜸
-        JPanel jp2 = new JPanel(); //터지기 전 눈 감음
-
         JLabel lb1 = new JLabel(); //눈뜸안터짐
-        JLabel lb2 = new JLabel(); //눈감음 안터짐
 
-        lb1 = new JLabel("fortune", ImageUtil.getImageNumber(안터지고눈감음),SwingConstants.CENTER);
-        lb2 = new JLabel("sec",ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
+        lb1 = new JLabel(ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
+        lb1.setLocation(400,200); //위치
+
+        add(lb1); jp1.add(lb1); //안터지고눈뜸
+        add(jp1);
+
+        jp1.setSize(800,800); //안터지고 눈 뜬 거 크기
+        jp1.setVisible(true);
 
         setSize(1000,700); //window size
-        jp1.setSize(800,800); //안터지고 눈 뜬 거 크기
-        jp2.setSize(800,800); //안터지고 눈 감은 거 크기
-        setLocation(400,200); //위치
-
-        add(lb1); add(lb2);
-        jp2.add(lb1); jp1.add(lb1); //안터지고눈뜸
-        jp1.add(lb2); jp1.add(lb2); //안터지고눈감음
-        add(jp1); add(jp2);
-        setVisible(true);
-
-        
     }
 
 
