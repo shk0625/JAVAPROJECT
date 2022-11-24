@@ -27,8 +27,9 @@ public class LastWords extends JFrame {
 
         talklb.setText("바탕화면 봐볼래?");
         talklb.setSize(400,400);
-        talklb.setLocation(300,300);
+        /*talklb.setLocation(300,300);*/
         jp.add(talklb);
+        jp.setLocation(300,300);
         jp.setVisible(true);
 
 
@@ -68,7 +69,7 @@ public class LastWords extends JFrame {
         //txt파일로 내가 뽑은 문구들 저장
         String text = FindList.get();  //db랑 연동되어있음 여기서 랜덤으로 1개씩 나옴 ;;;;
         /*String fileNm="C:\\Users\\USER\\Desktop_Lastwords.txt"; //바탕화면에 저장되는 경로 하지만 이건 안 되지*/
-        String fileNm="C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA_LastWords.txt"; //테스트파일 1번만 저장됨.
+        String fileNm="C:\\JAVA_LastWords"; //테스트파일 1번만 저장됨.
 
         File file = new File(fileNm);
         if(file.exists()){
@@ -86,7 +87,7 @@ public class LastWords extends JFrame {
             fileWriter.flush();
             fileWriter.close();
 
-        }catch (Exception e){
+        }catch (IOException e){
             e.printStackTrace();
             System.out.println("e = " + e);
         }
