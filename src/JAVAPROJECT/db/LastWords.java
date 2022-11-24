@@ -80,7 +80,7 @@ public class LastWords extends JFrame {
 
         }
         try{
-            file.createNewFile();
+            file.createNewFile(); //관리자 권한으로 실행해도 안 됨 뭐가 문제냐 ㅅㅑㅇ
             FileWriter fileWriter = new FileWriter(file, true); //뽑아진 것들 이어서 작성하는 용도
 
             fileWriter.write(text);
