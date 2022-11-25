@@ -24,6 +24,7 @@ public class LastWords extends JFrame {
         JLabel jlimage = new JLabel();
 
         talklb.setText("바탕화면 봐볼래?");
+        talklb.setLocation(300,300);
         talklb.setSize(400,400);
         /*talklb.setLocation(300,300);*/
         btnp.add(talklb);
