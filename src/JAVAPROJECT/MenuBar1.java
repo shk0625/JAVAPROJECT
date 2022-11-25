@@ -86,9 +86,10 @@ public class MenuBar1 extends JFrame {
 
         imagelb = new JLabel(ImageUtil.getImageNumber(안터지고눈뜸),SwingConstants.CENTER);
         imagelb.setLocation(400,200); //위치
-        add(imagelb); backgroundp.add(imagelb); add(backgroundp);
-        backgroundp.setVisible(true);
-        
+        add(imagelb); btnp.add(imagelb); add(btnp);
+        btnp.setLocation(600,600);
+        btnp.setVisible(true);
+
 
 
 
