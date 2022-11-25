@@ -15,7 +15,7 @@ public class MenuBar1 extends JFrame {
     public MenuBar1(String str) {
         super(str);
         MenuBar mb = new MenuBar();
-        Panel btnp = new Panel();
+        Panel btnp = new Panel(new BorderLayout());
         Panel backgroundp = new Panel();
         JLabel imagelb = new JLabel(); //눈뜸안터짐
 
@@ -56,11 +56,11 @@ public class MenuBar1 extends JFrame {
             }
         });
 
-        Button btnboom;
-        btnboom=new Button("포춘쿠키 터트리기");
-        btnp.add(btnboom);
+        JButton btnboom;
+        btnboom=new JButton("포춘쿠키 터트리기");
+        btnp.add(btnboom,BorderLayout.SOUTH);
         btnp.setSize(500,500);
-        btnp.setLocation(100,100);
+        /*btnp.setLocation(100,100);*/
         btnp.setVisible(true);
         add(btnp);
         btnboom.setVisible(true);
