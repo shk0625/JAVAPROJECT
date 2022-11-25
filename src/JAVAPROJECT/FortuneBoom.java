@@ -54,6 +54,7 @@ public class FortuneBoom extends JFrame {
         add(lbwords); jpb.add(words); add(jpb);
         jpb.add(lbwords);
         jpb.setLocation(235,400); //텍스트 필드 위치 조정되는 코드
+        jpb.setBackground(Color.white);
         lbwords.setSize(300,300);
 
         add(lb3); jp3.add(lb3);
