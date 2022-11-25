@@ -53,8 +53,8 @@ public class FortuneBoom extends JFrame {
         JTextField words = new JTextField(word);
         add(lbwords); jpb.add(words); add(jpb);
         jpb.add(lbwords);
-        jpb.setLocation(285,400); //텍스트 필드 위치 조정되는 코드
-        jpb.setBackground(Color.orange);
+        jpb.setLocation(285,400); //텍스트 필드 위치 조정되는 코드 (285,400)
+        jpb.setBackground(Color.white); //깔끔하긴한데... 텍스트 필드 크기 자체를 키우고싶음.
         lbwords.setSize(300,300);
         jpb.setSize(400,100);
 
