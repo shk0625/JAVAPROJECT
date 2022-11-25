@@ -71,6 +71,7 @@ public class LastWords extends JFrame {
         //txt파일로 내가 뽑은 문구들 저장
         String text = FindList.get();  //db랑 연동되어있음 여기서 랜덤으로 1개씩 나옴 ;;;;
         /*String fileNm="C:\\Users\\USER\\Desktop_Lastwords.txt"; //바탕화면에 저장되는 경로 하지만 이건 안 되지*/
+        //File file = new File("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA"); //LastWords로 된 파일 있음
         String fileNm="C:\\JAVA_LastWords"; //테스트파일 1번만 저장됨.
 
         File file = new File(fileNm);
@@ -82,7 +83,7 @@ public class LastWords extends JFrame {
 
         }
         try{
-            file.createNewFile(); //관리자 권한으로 실행해도 안 됨 뭐가 문제냐 ㅅㅑㅇ
+            file.createNewFile(); //관리자 권한으로 실행해도 안 됨 뭐가 문제냐 ㅅㅑㅇ 갑자기 안 되네
             FileWriter fileWriter = new FileWriter(file, true); //뽑아진 것들 이어서 작성하는 용도
 
             fileWriter.write(text);
