@@ -16,11 +16,9 @@ public class LastWords extends JFrame {
 
     public LastWords() {
         JPanel jp = new JPanel();
-        JPanel imagejp = new JPanel();
+        /*JPanel imagejp = new JPanel();*/
         JPanel btnp = new JPanel(new BorderLayout());
         JLabel talklb= new JLabel();
-        JButton back = new JButton(BorderLayout.SOUTH);
-        TextArea lastwords = new TextArea();
 
         setLayout(new BorderLayout());
         JLabel jlimage = new JLabel();
@@ -33,11 +31,11 @@ public class LastWords extends JFrame {
         /*btnp.setVisible(true);*/
 
 
-        back.setText("돌아가기");
-        add(btnp); //기능 ㅇㅋ
+        JButton back;
+        back = new JButton("돌아가기");
         btnp.add(back,BorderLayout.SOUTH);
-        btnp.setLocation(400,200);
-        btnp.setSize(600,600);
+        btnp.setVisible(true);
+        add(btnp); //기능 ㅇㅋ
         back.setVisible(true);
 
         back.addActionListener(new ActionListener() {
