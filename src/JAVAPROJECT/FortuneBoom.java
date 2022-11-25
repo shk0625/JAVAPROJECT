@@ -53,9 +53,10 @@ public class FortuneBoom extends JFrame {
         JTextField words = new JTextField(word);
         add(lbwords); jpb.add(words); add(jpb);
         jpb.add(lbwords);
-        jpb.setLocation(235,400); //텍스트 필드 위치 조정되는 코드
-        jpb.setBackground(Color.white);
+        jpb.setLocation(285,400); //텍스트 필드 위치 조정되는 코드
+        jpb.setBackground(Color.orange);
         lbwords.setSize(300,300);
+        jpb.setSize(400,100);
 
         add(lb3); jp3.add(lb3);
         add(jp3);
