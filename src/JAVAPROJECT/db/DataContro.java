@@ -35,6 +35,7 @@ public class DataContro extends JFrame {
         /*jp.setLocation(300, 300);*/
         jp.setVisible(true);
         add(jp);
+        jp.setBackground(Color.white); //배경색 화이트!!!
         back.setVisible(true);
 
         back.addActionListener(new ActionListener() {
