@@ -28,12 +28,12 @@ public class LastWords extends JFrame {
         talklb.setText("바탕화면 봐볼래?");
         talklb.setSize(400,400);
         /*talklb.setLocation(300,300);*/
-        jp.add(talklb);
-        jp.setLocation(300,300);
-        jp.setVisible(true);
+        btnp.add(talklb);
+        btnp.setLocation(300,300);
+        /*btnp.setVisible(true);*/
 
 
-        back.setText("back");
+        back.setText("돌아가기");
         add(btnp); //기능 ㅇㅋ
         btnp.add(back,BorderLayout.SOUTH);
         btnp.setLocation(400,200);
@@ -54,14 +54,16 @@ public class LastWords extends JFrame {
 
         //포춘공룡 이미지 추가
         jlimage= new JLabel(ImageUtil.getImageNumber(포춘공룡),SwingConstants.CENTER);
-        add(jlimage); imagejp.add(jlimage); add(imagejp);
-        imagejp.setSize(800,800); //공룡크기
-        imagejp.setVisible(true);
+        add(jlimage); btnp.add(jlimage); add(btnp);
+        btnp.setSize(800,800); //공룡크기
+        /*btnp.setVisible(true);*/
         jlimage.setVisible(true);
 
 
         //창
         setTitle("지난 날의 문구들...");
+        //같은 패널에 그냥 다 냅다 붙임
+        btnp.setVisible(true);
 
     }
 
