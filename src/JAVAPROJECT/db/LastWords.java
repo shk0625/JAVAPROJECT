@@ -17,7 +17,7 @@ public class LastWords extends JFrame {
     public LastWords() {
         JPanel jp = new JPanel();
         JPanel imagejp = new JPanel();
-        JPanel btnp = new JPanel();
+        JPanel btnp = new JPanel(new BorderLayout());
         JLabel talklb= new JLabel();
         JButton back = new JButton(BorderLayout.SOUTH);
         TextArea lastwords = new TextArea();
