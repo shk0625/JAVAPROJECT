@@ -77,12 +77,13 @@ public class LastWords extends JFrame {
         /*File file = new File("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA"); //LastWords로 된 파일 있음*/
 
         /*String word = new String(new FileWriter(new File(e)));*/
-        String fileNm="C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA"; //테스트파일 1번만 저장됨.
+        String fileNm="C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA_Lastwords.txt"; //저장은 되는데 새로운 문구가 들어옴..
+
 
 
         File file = new File(fileNm);
         if(file.exists()){
-            System.out.println("file exists"); //어디 경로인데어디어디어ㅣ???? 바탕화면에 안 보이는디..
+            System.out.println("file exists 하지만 생성은 됐어 파일 확인해봐."); //어디 경로인데어디어디어ㅣ???? 바탕화면에 안 보이는디..
         }
         else {
             System.out.println("file not exists");
