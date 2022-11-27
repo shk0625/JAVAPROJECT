@@ -41,7 +41,7 @@ public class FortuneBoom extends JFrame {
         try {
             BufferedWriter output = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream("C:\\Users\\USER\\Desktop\\myself_Lastwords.txt", true),
+                            new FileOutputStream("C:\\Users\\USER\\Desktop\\Lastwords.txt", true),
                             "UTF8")); //덮어쓰기말고 이어쓰기
             output.append(word + "\n");
             output.close();
