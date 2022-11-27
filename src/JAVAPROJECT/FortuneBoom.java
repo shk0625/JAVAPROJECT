@@ -41,7 +41,7 @@ public class FortuneBoom extends JFrame {
         try {
             BufferedWriter output = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream("C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA_Lastwords.txt", true),
+                            new FileOutputStream("C:\\Users\\USER\\Desktop\\myself_Lastwords.txt", true),
                             "UTF8")); //덮어쓰기말고 이어쓰기
             output.append(word + "\n");
             output.close();
@@ -54,7 +54,7 @@ public class FortuneBoom extends JFrame {
             BufferedWriter output = new BufferedWriter(
                     new OutputStreamWriter(
                             new FileOutputStream("C:\\Users\\USER\\Desktop\\back test 1\\JAVAPROJECT\\src\\JAVAPROJECT\\static\\txt\\lastwords.txt", true),
-                            "UTF8")); //덮어쓰기말고 이어쓰기
+                            "UTF8"));
             output.append(word + "\n");
             output.close();
         } catch (Exception e) {
