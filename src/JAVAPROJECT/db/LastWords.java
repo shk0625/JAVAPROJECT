@@ -74,7 +74,7 @@ public class LastWords extends JFrame {
         //txt파일로 내가 뽑은 문구들 저장
         /*String word = new String(new FileWriter(new File(e)));*/
         /*String text1 = lastwords.txt(); //이게 안 됨*/
-        
+
         String text = FindList.get();  //db랑 연동되어있음 여기서 랜덤으로 1개씩 나옴 ;;;;
 
         String fileNm="C:\\Users\\USER\\Desktop\\myself\\1-3\\수행평가\\JAVA_Lastwords.txt"; //저장은 되는데 새로운 문구가 들어옴..
@@ -99,6 +99,7 @@ public class LastWords extends JFrame {
             e.printStackTrace();
             System.out.println("e = " + e);
         }
+
 
     }
 
