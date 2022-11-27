@@ -83,10 +83,10 @@ public class LastWords extends JFrame {
 
         File file = new File(fileNm);
         if(file.exists()){
-            System.out.println("file exists 하지만 생성은 됐어 파일 확인해봐."); //어디 경로인데어디어디어ㅣ???? 바탕화면에 안 보이는디..
+            System.out.println("file exists"); //어디 경로인데어디어디어ㅣ???? 바탕화면에 안 보이는디..
         }
         else {
-            System.out.println("file not exists");
+            System.out.println("file not exists 하지만 생성은 됐어 파일 확인해봐.");
 
         }
         try{
