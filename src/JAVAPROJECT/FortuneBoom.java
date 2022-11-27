@@ -49,6 +49,18 @@ public class FortuneBoom extends JFrame {
             System.out.println("e = " + e);
         }
 
+        //내가 보기 편하게 저장
+        try {
+            BufferedWriter output = new BufferedWriter(
+                    new OutputStreamWriter(
+                            new FileOutputStream("C:\\Users\\USER\\Desktop\\back test 1\\JAVAPROJECT\\src\\JAVAPROJECT\\static\\txt\\lastwords.txt", true),
+                            "UTF8")); //덮어쓰기말고 이어쓰기
+            output.append(word + "\n");
+            output.close();
+        } catch (Exception e) {
+            System.out.println("e = " + e);
+        }
+
         //포춘쿠키 말 출력
         JTextField words = new JTextField(word);
         add(lbwords); jpb.add(words); add(jpb);
