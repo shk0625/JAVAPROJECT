@@ -31,8 +31,6 @@ public class DataContro extends JFrame {
 
         back = new JButton("돌아가기");
         jp.add(back, BorderLayout.SOUTH);
-        /*jp.setSize(300, 300);*/
-        /*jp.setLocation(300, 300);*/
         jp.setVisible(true);
         add(jp);
         jp.setBackground(Color.white); //배경색 화이트!!!
