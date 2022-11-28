@@ -7,8 +7,8 @@ import java.sql.SQLException;
 public class DatabaseCon {
     public static Connection connection() {
         String driver = "com.mysql.cj.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:1521/fortune";
-        String user = "root";
+        String url = "jdbc:mysql://fortune-rds.c0c0bugtpsab.ap-northeast-2.rds.amazonaws.com:3306/fortune";
+        String user = "seolhee";
         String pw = "23456789";
         Connection con = null;
 
