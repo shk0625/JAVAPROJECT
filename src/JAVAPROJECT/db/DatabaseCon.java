@@ -13,9 +13,9 @@ public class DatabaseCon {
         Connection con = null;
 
         try {
-             Class.forName(driver);
+            Class.forName(driver);
+            con = DriverManager.getConnection(url,user,pw);
             System.out.println("db연결중");
-            con=DriverManager.getConnection(url,user,pw);
             System.out.println("성공");
 
         } catch (ClassNotFoundException e) {

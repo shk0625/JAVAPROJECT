@@ -9,6 +9,11 @@ import JAVAPROJECT.util.ImageUtil;
 import javax.swing.*;
 
 public class Main {
+    public Main(){
+        new DataContro();
+
+    }
+
     public static void main(String args[]){
         ImageUtil.setImage(); // 이미지 세팅
 
@@ -24,7 +29,6 @@ public class Main {
 
         new MenuBar1("fortune");
         new DatabaseCon();
-        new DataContro();
         new FindList();
     }
 }
