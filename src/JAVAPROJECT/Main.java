@@ -4,9 +4,8 @@ import JAVAPROJECT.db.FindList;
 import JAVAPROJECT.util.ImageUtil;
 
 import javax.swing.*;
-import java.sql.ResultSet;
 
-public class MainFrame {
+public class Main {
     public static void main(String args[]){
         ImageUtil.setImage(); // 이미지 세팅
 
