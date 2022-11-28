@@ -1,5 +1,8 @@
 package JAVAPROJECT;
 
+import JAVAPROJECT.db.DataContro;
+import JAVAPROJECT.db.DatabaseCon;
+import JAVAPROJECT.db.Datasave;
 import JAVAPROJECT.db.FindList;
 import JAVAPROJECT.util.ImageUtil;
 
@@ -20,5 +23,8 @@ public class Main {
         ImageUtil.setImage();
 
         new MenuBar1("fortune");
+        new DatabaseCon();
+        new DataContro();
+        new FindList();
     }
 }
